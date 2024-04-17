@@ -4,6 +4,8 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // env文件目录
+  envDir: 'env',
   plugins: [vue()],
   resolve: {
     // 配置路径别名
