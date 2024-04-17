@@ -1,0 +1,7 @@
+// 组织统一导出
+@use 'normalize.css'; // 重置样式
+@use 'animate.css'; // 引入animate动画库
+@use 'transition.scss'; // 引入自定义动画
+@use 'nprogress.scss'; // 引入路由进度条
+
+@tailwind utilities; // 快速地在HTML元素上应用样式
