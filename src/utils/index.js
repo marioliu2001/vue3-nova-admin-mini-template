@@ -17,7 +17,7 @@ export function getShowStaticMenuList(menuList) {
  * @param {Object} result 处理后的结果
  * @returns {Object} 存储了所有面包屑的结果对象
  */
-export const getAllBreadcrumbList = (menuList, parent = [], result) => {
+export const getAllBreadcrumbList = (menuList, parent = [], result = {}) => {
   for (const item of menuList) {
     // 将当前菜单路径及其所有父级菜单存储到结果对象中
     result[item.path] = [...parent, item];

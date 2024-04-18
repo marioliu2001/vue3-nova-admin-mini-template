@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router
 import nprogress from '@/utils/nprogress';
 import { LOGIN_URL, ROUTER_WHITE_LIST } from '@/config/index.js';
 import { errorRouter, layoutRouter, staticRouter } from '@/routers/modules/staticRouter.js';
+import useAuthStore from '@/stores/modules/auth.js';
 
 // .env配置文件读取
 const mode = import.meta.env.VITE_ROUTER_MODE;
@@ -33,8 +34,8 @@ const router = createRouter({
  */
 router.beforeEach(async (to, from, next) => {
   // const userStore = useUserStore();
-  // const authStore = useAuthStore();
-
+  const authStore = useAuthStore();
+  await authStore.listRouters();
   // 1、NProgress 开始
   nprogress.start();
 
