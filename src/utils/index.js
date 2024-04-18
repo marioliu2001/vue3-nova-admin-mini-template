@@ -1,12 +1,4 @@
 /**
- * @description 生成uuid 生成全球唯一标识
- * @returns string 返回 uuid
- */
-export function uuid() {
-  return crypto.randomUUID();
-}
-
-/**
  * @description 使用递归过滤出需要渲染在左侧菜单静态的列表 (isHide == 0 是隐藏的菜单)
  * @param {Array} menuList 菜单列表
  * @returns {Array} 过滤后的菜单列表
