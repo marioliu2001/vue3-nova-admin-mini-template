@@ -9,6 +9,8 @@ import 'element-plus/theme-chalk/dark/css-vars.css';
 import router from './routers';
 // 引入仓库pinia
 import pinia from './stores/index.js';
+// 引入全局组件配置
+import NovaComponents from '@/components/index.js';
 
 // 创建app
 const app = createApp(App);
@@ -20,6 +22,8 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 app.use(router);
 // 注册pinia
 app.use(pinia);
+// 注册自定义组件
+app.use(NovaComponents);
 
 // 挂载
 app.mount('#app');
