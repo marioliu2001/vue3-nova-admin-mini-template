@@ -8,7 +8,7 @@ module.exports = {
   // 指定解析器，这里使用 vue-eslint-parser 解析 Vue 文件
   parser: 'vue-eslint-parser',
   parserOptions: {
-    ecmaVersion: 2018, // 指定要使用的 ECMAScript 版本 'latest' 这是最新
+    ecmaVersion: 'latest', // 指定要使用的 ECMAScript 版本 'latest' 这是最新
     sourceType: 'module', // 设置为 "module" 表示 ECMAScript 模块
     jsxPragma: 'React', // 指定在 JSX 文件中使用的 pragma，默认为 "React"
     ecmaFeatures: {
