@@ -1,14 +1,14 @@
 <script setup>
-import AsideSubMenu from './AsideSubMenu.vue';
+import ColumnSubMenu from './ColumnSubMenu.vue';
 import { useRouter } from 'vue-router';
-
 const router = useRouter();
+
 // 获取父组件传递过来的数据
 defineProps(['menuList']);
 
 // 打开外部标签页
 const handleMenuIsLink = (value) => {
-  if (value.meta.isLink) return window.open(value.meta.isLink, '_blank');
+  if (value.meta?.isLink) return window.open(value.meta.isLink, '_blank');
   router.push(value.path);
 };
 </script>
@@ -23,7 +23,7 @@ const handleMenuIsLink = (value) => {
         </el-icon>
         <span v-text="item.meta.title"></span>
       </template>
-      <AsideSubMenu :menuList="item.children" />
+      <ColumnSubMenu :menuList="item.children" />
     </el-sub-menu>
     <!--无子项-->
     <el-menu-item
@@ -35,14 +35,14 @@ const handleMenuIsLink = (value) => {
       <el-icon v-if="item.meta.icon">
         <component :is="item.meta.icon" />
       </el-icon>
-      <span v-text="item.meta.title"></span>
+      <template #title>
+        <span v-text="item.meta.title"></span>
+      </template>
     </el-menu-item>
   </template>
 </template>
 
 <style lang="scss" scoped>
-/** el-menu鼠标悬停和点击代码 */
-// 父节点
 .el-menu-item {
   height: $aside-menu-height !important;
   margin-bottom: $aside-menu-margin-bottom;
@@ -51,7 +51,6 @@ const handleMenuIsLink = (value) => {
 
   /* 设置用户禁止选中 */
   user-select: none;
-  border-left: $aside-menu-border-left solid transparent;
   border-radius: $aside-menu-border-left;
 
   //@apply dark:c-#E5E3FA;
@@ -67,7 +66,6 @@ const handleMenuIsLink = (value) => {
   &:hover {
     color: var(--el-color-primary);
     background: var(--el-color-primary-light-8);
-    border-left: $aside-menu-border-left solid var(--el-color-primary);
 
     // & 含义 .el-menu-item
     border-radius: $aside-menu-border-left;
@@ -82,9 +80,9 @@ const handleMenuIsLink = (value) => {
   &.is-active {
     color: var(--el-color-primary);
     background: var(--el-color-primary-light-8);
-    border-left: $aside-menu-border-left solid var(--el-color-primary);
   }
 }
+
 // 子节点
 :deep(.el-sub-menu__title) {
   height: $aside-menu-height;
@@ -95,7 +93,6 @@ const handleMenuIsLink = (value) => {
 
   /* 设置用户禁止选中 */
   user-select: none;
-  border-left: $aside-menu-border-left solid transparent;
   border-radius: $aside-menu-border-left;
 
   //@apply dark:c-#E5E3FA;
@@ -106,16 +103,13 @@ const handleMenuIsLink = (value) => {
   span {
     transform: translate($aside-menu-font-icon-translate); // 文字偏移
   }
-
   &:hover {
     color: var(--el-color-primary);
     background: var(--el-color-primary-light-8);
-    border-left: $aside-menu-border-left solid var(--el-color-primary);
   }
   &:active {
     color: var(--el-color-primary);
     background: var(--el-color-primary-light-8);
-    border-left: $aside-menu-border-left solid var(--el-color-primary);
   }
 }
 </style>
