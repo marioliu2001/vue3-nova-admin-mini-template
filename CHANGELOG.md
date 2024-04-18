@@ -1,5 +1,27 @@
 # 变更日志
 
+## [0.0.1-alpha.2](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.1...0.0.1-alpha.2) (2024-04-18)
+
+
+### ✨ Features | 新功能
+
+* **暗黑组件:** 暗黑组件 ([7305139](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/7305139e4d674ace895bb46e4ac37d750191fd0b))
+* **侧边栏组件:** 分栏式侧边栏组件 ([8be66f1](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/8be66f15ad09081f3995d56ddbabb9267288a6cb))
+* **侧边栏组件:** 横向式侧边栏组件 ([d19f4c8](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/d19f4c8483059f6b26c0170fd9eef4e786b6603c))
+* **侧边栏组件:** 普通侧边栏组件 ([b637200](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/b6372001d5cd3b7ccf249384e8a4c4e4c2544d9b))
+* **尺寸配置组件:** 尺寸配置组件 ([a699fd5](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/a699fd5071a4153ce7978879944cbab34427a1a3))
+* **弹框组件:** 封装弹框组件 ([a840597](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/a840597f63cd036b66703632b5355873552434a0))
+* **登录用户组件:** 登录用户组件 ([ec14011](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/ec14011e0784705df3b43bda04c1f7dc045dd7f3))
+* **断点钩子:** 断点钩子判断当前设备 ([4d172e9](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/4d172e9a51173cc8e85a389c15368d2bd184e3a0))
+* **面包屑组件:** 完成面包屑组件 ([54b70b1](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/54b70b1435589a0064ae5837db3173ec2cf9575e))
+* **模态框:** 封装模态框 ([3804102](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/38041022c2496a92d87d197bdb456b5ce1f246a3))
+* **全局挂载组件:** 导出全局封装组件并全局挂载 ([d8a2d35](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/d8a2d35596a13e6920360e30c2a565cedf550dcb))
+* **全屏和主题:** 全屏和主题组件 ([54aa859](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/54aa8592a05a5ed0e5618fba5e867af72622942e))
+* **收缩组件:** 完成收缩组件 ([26c563d](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/26c563dc0af1db7d34c96c155aeb5452a40d7089))
+* **搜索组件:** 完成搜索组件 ([686a515](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/686a515b3806ac0d7b44106fb6e17d9811358e93))
+* **主题更换弹框组件:** 搭建主题更换弹框组件 ([c96bc31](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/c96bc319a27adc73619a84fd6aef6ad18afc7b0a))
+* **Main主页面:** Main主页面和放大缩小的叉叉 ([cc375c9](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/cc375c93f18cc080383837024aa9fc45105d8576))
+
 ## [0.0.1-alpha.1](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.0...0.0.1-alpha.1) (2024-04-18)
 
 
