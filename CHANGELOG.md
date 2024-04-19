@@ -1,5 +1,20 @@
 # 变更日志
 
+## [0.0.1-alpha.3](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.2...0.0.1-alpha.3) (2024-04-19)
+
+
+### ✨ Features | 新功能
+
+* **布局切换:** 实现布局切换 ([933d3f6](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/933d3f675e58ac444a68dd07900dcdfce371f94b))
+* **主页:** 对主页页面开发 ([960a0a4](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/960a0a42e4408cc68af90ce111a4c41df6c48cc9))
+* **组装Header:** 组装Header并展示 ([601b07e](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/601b07ea4d2813095de833065c3bcdb5816f3896))
+* **App:** 对App进行配置 ([b2c8f82](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/b2c8f827a9f8d18afe27e9cf0fb4c4d97f48575f))
+* **LayoutClassic:** LayoutClassic布局展示 ([755659d](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/755659ddd4386ba7bc654f4f1ceefff68c732d04))
+* **LayoutColumns:** LayoutColumns布局展示 ([a2e53b6](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/a2e53b6730b1f59711cbde6d943921fee772d0cd))
+* **LayoutHorizontal:** LayoutHorizontal布局展示 ([67b16c0](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/67b16c0bdd85967d921f33156488f99016628b46))
+* **LayoutMobile:** LayoutMobile布局展示 ([70bce48](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/70bce488f321bab9a760174639842753be9da16e))
+* **vertical布局:** 完整vertical布局页面 ([3617b24](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/3617b2449782ba564b9822fc7f5e88c9795f6518))
+
 ## [0.0.1-alpha.2](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.1...0.0.1-alpha.2) (2024-04-18)
 
 
