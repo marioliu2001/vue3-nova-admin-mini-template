@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import LayoutVertical from './LayoutVertical/index.vue';
+</script>
 
 <template>
-  <router-view />
+  <LayoutVertical />
 </template>
 
 <style scoped></style>

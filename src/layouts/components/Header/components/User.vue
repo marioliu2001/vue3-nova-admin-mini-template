@@ -36,7 +36,7 @@ const handleCommand = (command) => {
     </template>
   </el-image>
   <el-dropdown class="ml-[10px]" :hide-on-click="false" @command="handleCommand">
-    <div class="koi-dropdown">
+    <div class="nova-dropdown">
       Vite(管理员)
       <el-icon><arrow-down /></el-icon>
     </div>
@@ -51,7 +51,7 @@ const handleCommand = (command) => {
 
 <style lang="scss" scoped>
 // dropdown字体颜色
-.koi-dropdown {
+.nova-dropdown {
   color: var(--el-color-primary);
   white-space: nowrap; /* 不换行 */
   cursor: pointer;

@@ -337,7 +337,7 @@ mittBus.on('handleThemeConfig', () => {
 
 <style lang="scss" scoped>
 // 图标颜色
-.koi-icon {
+.nova-icon {
   &:hover {
     color: var(--el-color-primary);
     cursor: pointer;

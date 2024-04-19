@@ -11,7 +11,7 @@ const changeCollapseIcon = () => {
 </script>
 
 <template>
-  <el-icon class="collapse-icon iq-icon" :size="20" @click="changeCollapseIcon">
+  <el-icon class="collapse-icon nova-icon" :size="20" @click="changeCollapseIcon">
     <Fold v-if="!globalStore.isCollapse" />
     <Expand v-else />
   </el-icon>
