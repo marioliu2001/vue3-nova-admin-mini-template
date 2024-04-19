@@ -2,14 +2,16 @@
 // import LayoutVertical from './LayoutVertical/index.vue';
 // import LayoutClassic from './LayoutClassic/index.vue';
 // import LayoutHorizontal from './LayoutHorizontal/index.vue';
-import LayoutColumns from './LayoutColumns/index.vue';
+// import LayoutColumns from './LayoutColumns/index.vue';
+import LayoutMobile from './LayoutMobile/index.vue';
 </script>
 
 <template>
   <!--<LayoutVertical />-->
   <!--<LayoutClassic />-->
   <!--<LayoutHorizontal />-->
-  <LayoutColumns />
+  <!--<LayoutColumns />-->
+  <LayoutMobile />
 </template>
 
 <style scoped></style>
