@@ -3,6 +3,9 @@ import { ref } from 'vue';
 const handleDebounceBtn = () => {
   console.log('防抖');
 };
+const handleThrottleBtn = () => {
+  console.log('节流');
+};
 const text = ref('这是要复制的内容');
 </script>
 
