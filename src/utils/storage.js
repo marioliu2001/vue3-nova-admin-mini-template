@@ -1,3 +1,5 @@
+import { PINIA_PREFIX } from '@/config/index.js';
+
 /**
  * window.localStorage 浏览器永久缓存
  * @method set 设置永久缓存
@@ -133,5 +135,25 @@ export const Session = {
       console.error('Failed to clear sessionStorage', e);
       return false;
     }
+  }
+};
+
+/**
+ * 封装获取用户信息的方法
+ * @returns {string|any} Token
+ */
+export const getToken = () => {
+  const novaUser = window.localStorage.getItem(PINIA_PREFIX + 'user');
+  if (novaUser != null && novaUser !== '' && novaUser !== undefined) {
+    const parseNovaUser = JSON.parse(novaUser);
+    // console.log('parseNovaUser', parseNovaUser);
+    const keys = Object.keys(parseNovaUser);
+    if (keys.includes('token')) {
+      return parseNovaUser.token;
+    } else {
+      return '';
+    }
+  } else {
+    return '';
   }
 };
