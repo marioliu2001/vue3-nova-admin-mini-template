@@ -1,5 +1,12 @@
 # 变更日志
 
+## [0.0.1-alpha.4](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.3...0.0.1-alpha.4) (2024-04-19)
+
+
+### ✨ Features | 新功能
+
+* **部署:** 部署站点 ([ff0c372](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/ff0c372e5c13aa15b4e33a1a21603fdc60c53a92))
+
 ## [0.0.1-alpha.3](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.2...0.0.1-alpha.3) (2024-04-19)
 
 
