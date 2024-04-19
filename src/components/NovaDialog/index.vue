@@ -127,7 +127,7 @@ defineExpose({
     // 暗黑模式下的背景色
     @apply dark:bg-[#141414];
     .el-dialog__title {
-      font-family: YouYuan;
+      //font-family: YouYuan;
       font-size: 18px;
       font-weight: 500;
     }
