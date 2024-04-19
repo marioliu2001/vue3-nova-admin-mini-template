@@ -1,0 +1,70 @@
+# 定义 GitHub Actions 工作流程，用于将 vue3-iqoo-admin-easy-template 部署到 GitHub Pages
+name: Deploy vue3-nova-admin-mini-template to Pages
+
+# 定义触发条件
+on:
+  # 在针对 `main` 分支的推送上运行。如果你使用 `master` 分支作为默认分支，请将其更改为 `master`
+  push:
+    branches: ['main']
+
+  # 允许你从 Actions 选项卡手动运行此工作流程
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 定义并发限制，保证只能同时进行一次部署
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+# 定义作业
+jobs:
+  # 单次部署的工作描述
+  deploy:
+    # 定义部署环境，设置 GitHub Pages 的 URL
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # 在 ubuntu-latest 上运行该作业
+    runs-on: ubuntu-latest
+    # 步骤列表
+    steps:
+      # 步骤1：获取代码
+      - name: Checkout
+        uses: actions/checkout@v4
+      # uses: pnpm/action-setup@v2 # 如果使用 pnpm，请取消注释
+      # uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
+
+      # 步骤2：设置 Node.js 环境
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm' # 或 pnpm / yarn
+
+      # 步骤3：安装依赖
+      - name: Install dependencies
+        run: npm ci # 或 pnpm install / yarn install / bun install
+
+      # 步骤4：打包代码
+      - name: Build with Script
+        run: npm run github:build # npm run build # 或 pnpm build / yarn build / bun run build
+
+      # 步骤5：配置 Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # 步骤6：上传构建产物
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      # 步骤7：部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

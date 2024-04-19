@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "cloudflare:build": "vite build --base=./",
+    "github:build": "vite build --base=/vue3-nova-admin-mini-template/",
     "preview": "vite preview",
     "release": "release-it",
     "release:first": "release-it --no-git.requireUpstream",
