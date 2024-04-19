@@ -1,5 +1,22 @@
 # 变更日志
 
+## [0.0.1-alpha.5](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.4...0.0.1-alpha.5) (2024-04-19)
+
+
+### ✨ Features | 新功能
+
+* **按钮防抖指令:** 按钮防抖指令 ([c1563dc](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/c1563dcbcf0ee1bf044c776ec59840f1d6f04360))
+* **按钮节流指令:** 按钮节流指令 ([d82f876](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/d82f87695fb291b09af926c8e5ebd7b21ebefee9))
+* **复制功能指令:** 复制功能指令 ([2774114](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/277411490fc1784112060a8a35d395577d89656f))
+* **节流提交:** 节流提交 ([db41fb7](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/db41fb7e6973e2a7ccf539a49c56f0ca3ed4ccbd))
+* **首屏加载:** 添加首屏加载动画 ([4638067](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/463806735fb89ab9b1cf8d256184dd171b162bb2))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **小修:** 手误删除了方法 ([c5605d3](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/c5605d3522b58e47fdffb2d116e3bccb4afdd6fb))
+* **route:** 修复刷新后页面空白 ([b4e2b10](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/b4e2b107a009ad088932d08fdbce5cf013eba6c1))
+
 ## [0.0.1-alpha.4](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.3...0.0.1-alpha.4) (2024-04-19)
 
 
