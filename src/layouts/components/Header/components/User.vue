@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { Local, Session } from '@/utils/storage.js';
-import { LOGIN_URL } from '@/config';
+// import { LOGIN_URL } from '@/config';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
@@ -11,7 +11,8 @@ const handleLayout = () => {
   Local.clear();
   Session.clear();
   // 必须使用这个把页面缓存刷掉
-  window.location.replace(LOGIN_URL);
+  // window.location.replace(LOGIN_URL);
+  location.reload();
 };
 // 用户头像
 const avatar = ref('https://cn.vitejs.dev/logo-with-shadow.png');
