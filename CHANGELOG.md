@@ -1,5 +1,14 @@
 # 变更日志
 
+## [0.0.1-alpha.6](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.5...0.0.1-alpha.6) (2024-04-19)
+
+
+### ✨ Features | 新功能
+
+* **封装axios:** 封装axios ([40a359f](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/40a359f64f26f1e7a0de96206ce85eeb11cdd98d))
+* **简易登录页面and简易登录校验:** 简易登录页面and简易登录操作和校验 ([a3edb88](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/a3edb887783c69b64d8859fe29e59d3fc5f2ec77))
+* **dy热搜页面:** dy热搜页面 ([ec752a5](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/ec752a5b434535d6c69e637328dd38552bc354d7))
+
 ## [0.0.1-alpha.5](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.4...0.0.1-alpha.5) (2024-04-19)
 
 
