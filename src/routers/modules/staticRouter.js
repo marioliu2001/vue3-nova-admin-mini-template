@@ -119,7 +119,7 @@ export const staticRouter = [
     path: '/test', // 路由访问路径[唯一]
     name: 'test', // 命名路由[唯一]
     component: Layout, // 一级路由，可以将子路由放置Main模块中
-    redirect: '/test/Father', // path路径，<router-link name="/404"> 也是使用path进行跳转
+    redirect: '/test/tool', // path路径，<router-link name="/404"> 也是使用path进行跳转
     meta: {
       title: '测试', // 标题
       icon: 'Tools', // 图标
@@ -131,12 +131,26 @@ export const staticRouter = [
     },
     children: [
       {
+        path: '/test/tool', // [唯一]
+        name: 'Tool',
+        component: () => import('@/views/test/tool.vue'),
+        meta: {
+          title: '工具', // 标题
+          icon: 'ToiletPaper', // 图标
+          isHide: '1', // 代表路由在菜单中是否隐藏，是否隐藏[0隐藏，1显示]
+          isLink: '', // 是否外链[有值则是外链]
+          isKeepAlive: '0', // 是否缓存路由数据[0是，1否]
+          isFull: '1', // 是否缓存全屏[0是，1否]
+          isAffix: '1' // 是否缓存固定路由[0是，1否]
+        }
+      },
+      {
         path: '/test/link', // [唯一]
         name: 'Link',
         // component: () => import('@/views/test/Children.vue'),
         meta: {
           title: '外链', // 标题
-          icon: 'UserFilled', // 图标
+          icon: 'Link', // 图标
           isHide: '1', // 代表路由在菜单中是否隐藏，是否隐藏[0隐藏，1显示]
           isLink: 'https://www.baidu.com', // 是否外链[有值则是外链]
           isKeepAlive: '0', // 是否缓存路由数据[0是，1否]

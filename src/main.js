@@ -11,6 +11,8 @@ import router from './routers';
 import pinia from './stores/index.js';
 // 引入全局组件配置
 import NovaComponents from '@/components/index.js';
+// 引入全局自定义指令
+import NovaDirectives from '@/directives/index';
 
 // 创建app
 const app = createApp(App);
@@ -24,6 +26,8 @@ app.use(router);
 app.use(pinia);
 // 注册自定义组件
 app.use(NovaComponents);
+// 注册全局自定义指令
+app.use(NovaDirectives);
 
 // 挂载
 app.mount('#app');
