@@ -1,9 +1,11 @@
 import debounce from './modules/debounce';
 import throttle from './modules/throttle.js';
+import copy from './modules/copy.js';
 
 const directivesList = {
   debounce,
-  throttle
+  throttle,
+  copy
 };
 
 const directives = {
