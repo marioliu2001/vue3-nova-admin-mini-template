@@ -25,7 +25,7 @@ const mobileDrawer = ref(false);
 <template>
   <el-container class="layout-container">
     <el-header class="layout-header flex items-center justify-between">
-      <el-icon class="collapse-icon nova-icon" :size="30" @click="mobileDrawer = true">
+      <el-icon class="collapse-icon nova-icon" :size="22" @click="mobileDrawer = true">
         <Expand />
       </el-icon>
       <div class="flex items-center">
