@@ -163,7 +163,21 @@ export const staticRouter = [
         name: 'Table',
         component: () => import('@/views/test/table.vue'),
         meta: {
-          title: '弹框组件', // 标题
+          title: '表格组件', // 标题
+          icon: 'Comment', // 图标
+          isHide: '1', // 代表路由在菜单中是否隐藏，是否隐藏[0隐藏，1显示]
+          isLink: '', // 是否外链[有值则是外链]
+          isKeepAlive: '0', // 是否缓存路由数据[0是，1否]
+          isFull: '1', // 是否缓存全屏[0是，1否]
+          isAffix: '1' // 是否缓存固定路由[0是，1否]
+        }
+      },
+      {
+        path: '/test/waterMarker', // [唯一]
+        name: 'waterMarker',
+        component: () => import('@/views/test/waterMarker.vue'),
+        meta: {
+          title: '水印组件', // 标题
           icon: 'Comment', // 图标
           isHide: '1', // 代表路由在菜单中是否隐藏，是否隐藏[0隐藏，1显示]
           isLink: '', // 是否外链[有值则是外链]

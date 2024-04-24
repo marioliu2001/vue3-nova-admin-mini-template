@@ -3,13 +3,15 @@ import throttle from './modules/throttle.js';
 import copy from './modules/copy.js';
 import throttleInput from './modules/throttleInput.js';
 import adaptive from './modules/adaptive.js';
+import waterMarker from './modules/waterMarker.js';
 
 const directivesList = {
   debounce,
   throttle,
   copy,
   throttleInput,
-  adaptive
+  adaptive,
+  waterMarker
 };
 
 const directives = {
