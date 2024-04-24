@@ -93,9 +93,9 @@ const selectionChange = (val) => {
 <template>
   <div>
     <el-table
+      v-adaptive="{ bottom: pagination === true ? 32 : 0 }"
       ref="table"
       :data="tableData"
-      :max-height="maxHeight"
       v-loading="loading"
       element-loading-text="正在努力加载中..."
       :border="border"
