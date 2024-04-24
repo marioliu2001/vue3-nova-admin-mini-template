@@ -1,5 +1,19 @@
 # 变更日志
 
+## [0.1.0](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.6...0.1.0) (2024-04-24)
+
+
+### ✨ Features | 新功能
+
+* **封装Table组件:** 封装Table组件 ([73846f5](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/73846f59954e93aeef6c0ad662dfd46f4374d5a1))
+* **指令:** 增加表格高度自适应指令 ([081db33](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/081db33bbafe8f6fbfbd52fac29adc76916c68e4))
+* **指令:** 增加水印指令 ([e4c9777](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/e4c9777a8e5074698898fdadf955192d811090d4))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **图标:** 修复手机端收缩图标大小 ([620a3e3](https://github.com/marioliu2001/vue3-nova-admin-mini-template/commit/620a3e38545e335498724886661babe56302535a))
+
 ## [0.0.1-alpha.6](https://github.com/marioliu2001/vue3-nova-admin-mini-template/compare/0.0.1-alpha.5...0.0.1-alpha.6) (2024-04-19)
 
 
